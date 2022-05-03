@@ -1,5 +1,7 @@
 ﻿# Getting Started
 
+THIS VERSION IN BETA AND IS SUBJECT TO FREQUENT CHANGES/IMPROVEMENTS
+
 ## Add Attribute to the class to peek
 
 `MemberPeekerCommon.CanPeekAttribute`.
