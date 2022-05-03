@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberPeekerGenerator", "MemberPeekerGenerator\MemberPeekerGenerator.csproj", "{F495C57D-35F5-44F1-B674-7D8EDD9DEC90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemberPeekerGenerator", "MemberPeekerGenerator\MemberPeekerGenerator.csproj", "{F495C57D-35F5-44F1-B674-7D8EDD9DEC90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberPeekerCommon", "MemberPeekerCommon\MemberPeekerCommon.csproj", "{38A69199-AC5E-4BFC-9BF1-F0D77875CB79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemberPeekerCommon", "MemberPeekerCommon\MemberPeekerCommon.csproj", "{38A69199-AC5E-4BFC-9BF1-F0D77875CB79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProject", "ExampleProject\ExampleProject.csproj", "{AD3DA9E0-F0CB-4CFD-97F4-52C358854896}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleProject", "ExampleProject\ExampleProject.csproj", "{AD3DA9E0-F0CB-4CFD-97F4-52C358854896}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberPeekerGenerator.Tests", "MemberPeekerGenerator.Tests\MemberPeekerGenerator.Tests.csproj", "{2EE57722-3B68-4277-B597-A132F5A7A24F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemberPeekerGenerator.Tests", "MemberPeekerGenerator.Tests\MemberPeekerGenerator.Tests.csproj", "{2EE57722-3B68-4277-B597-A132F5A7A24F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1194FDF7-9842-4EE3-8218-B88BF6BCED6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD3DA9E0-F0CB-4CFD-97F4-52C358854896} = {1194FDF7-9842-4EE3-8218-B88BF6BCED6E}
+		{2EE57722-3B68-4277-B597-A132F5A7A24F} = {1194FDF7-9842-4EE3-8218-B88BF6BCED6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D1C6AC2-197C-406E-AD62-F5AB17764DA0}

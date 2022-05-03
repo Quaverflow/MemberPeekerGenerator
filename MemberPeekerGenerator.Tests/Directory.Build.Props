@@ -1,0 +1,11 @@
+<Project>
+  <ItemGroup>
+      <CSFile Include="C:\Users\mirko\source\repos\MemberPeekerGenerator\ExampleProject\ExampleClass.cs"/>
+      <FilesToMove Include="$(MSBuildProjectDirectory)\ExampleClass.cs"/>
+
+  </ItemGroup>
+
+  <Target Name="Build">
+      <Move SourceFiles="@(FilesToMove)" DestinationFolder="$(MSBuildProjectDirectory)\ImportedTypes" />
+  </Target> 
+</Project>

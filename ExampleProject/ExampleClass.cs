@@ -23,7 +23,7 @@ public class ExampleClass
         var structNested = new AmASneakyStruct();
         var classNested = new IAmASneakyClass();
         var enumNested = IAmASneakyEnum.Sneaky;
-        var returnValueForTestingPurposes = 135;
+        var returnValueForTestingPurposes = 13;
         return returnValueForTestingPurposes;
     }
     private struct AmASneakyStruct
