@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberPeekerGenerator", "Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberPeekerCommon", "MemberPeekerCommon\MemberPeekerCommon.csproj", "{38A69199-AC5E-4BFC-9BF1-F0D77875CB79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProject", "ExampleProject\ExampleProject.csproj", "{AD3DA9E0-F0CB-4CFD-97F4-52C358854896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberPeekerGenerator.Tests", "MemberPeekerGenerator.Tests\MemberPeekerGenerator.Tests.csproj", "{2EE57722-3B68-4277-B597-A132F5A7A24F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{38A69199-AC5E-4BFC-9BF1-F0D77875CB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A69199-AC5E-4BFC-9BF1-F0D77875CB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A69199-AC5E-4BFC-9BF1-F0D77875CB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3DA9E0-F0CB-4CFD-97F4-52C358854896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3DA9E0-F0CB-4CFD-97F4-52C358854896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3DA9E0-F0CB-4CFD-97F4-52C358854896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3DA9E0-F0CB-4CFD-97F4-52C358854896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE57722-3B68-4277-B597-A132F5A7A24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE57722-3B68-4277-B597-A132F5A7A24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE57722-3B68-4277-B597-A132F5A7A24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE57722-3B68-4277-B597-A132F5A7A24F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
