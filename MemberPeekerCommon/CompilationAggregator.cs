@@ -46,15 +46,9 @@ public static class CompilationAggregator
 
             var lastSlash = path.Substring(index);
             stringBuilder.AppendLine($"      <CSFile Include=\"{path}\"/>");
-            stringBuilder.AppendLine($"      <FilesToMove Include=\"$(MSBuildProjectDirectory){lastSlash}\"/>");
-            stringBuilder.AppendLine();
         }
 
         stringBuilder.AppendLine("  </ItemGroup>");
-        stringBuilder.AppendLine();
-        stringBuilder.AppendLine("  <Target Name=\"Build\">");
-        stringBuilder.AppendLine("      <Move SourceFiles=\"@(FilesToMove)\" DestinationFolder=\"$(MSBuildProjectDirectory)\\ImportedTypes\" />");
-        stringBuilder.AppendLine("  </Target> ");
         stringBuilder.AppendLine("</Project>");
 
         File.WriteAllText(projectPath, stringBuilder.ToString());

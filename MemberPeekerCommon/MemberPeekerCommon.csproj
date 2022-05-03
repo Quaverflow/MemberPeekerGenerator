@@ -1,9 +1,31 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
+						<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+
+		<Authors>Quaverflow</Authors>
+		<Description>A generator that creates copies of types with all members set to public.</Description>
+		<Copyright>Copyright (c) Mirko Sangrigoli 2022</Copyright>
+		<PackageProjectUrl>https://github.com/Quaverflow/MemberPeekerGenerator/</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>test; tdd; encapsulation; reflection; incrementalGenerator; sourceGenerator; generator</PackageTags>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/Quaverflow/MemberPeekerGenerator/</RepositoryUrl>
+		<PackageIcon>Icon.jpg</PackageIcon>
+		<FileVersion>1.0.0.0</FileVersion>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<Version>1.0.0</Version>		
 	</PropertyGroup>
+	<ItemGroup>
+	  <None Update="Icon.jpg">
+	    <PackagePath>\</PackagePath>
+	    <Pack>True</Pack>
+	  </None>
+	</ItemGroup>
 </Project>
