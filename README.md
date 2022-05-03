@@ -6,5 +6,4 @@ It is a generator that create a copy of the desired class with all member set to
 
 **Follow the GET STARTED on the wiki**
 
-**THIS VERSION IN BETA**
-**SUBJECT TO FREQUENT CHANGES/IMPROVEMENTS**
+**THIS VERSION IS IN BETA AND SUBJECT TO FREQUENT CHANGES/IMPROVEMENTS**
