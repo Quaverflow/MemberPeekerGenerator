@@ -11,17 +11,21 @@ public static class CompilationAggregator
     /// Gets all the types in the referenced assembly and adds them to the compilation
     /// </summary>
     /// <param name="assembly"></param>
-    public static void AddToCompilation(Assembly assembly)
+    public static void AddToCompilation(params Assembly[] assemblies)
     {
         if (_done)
         {
             return;
         }
 
-        var types = assembly.GetTypes().Where(x => x.GetCustomAttributes(typeof(CanPeekAttribute), true).Length > 0);
-        var paths = types.Select(x => (CanPeekAttribute)x.GetCustomAttributes(typeof(CanPeekAttribute), true)
-                .First())
-            .Select(y => y.FilePath);
+        var paths = new List<string>();
+        foreach (var assembly in assemblies)
+        {
+            var types = assembly.GetTypes().Where(x => x.GetCustomAttributes(typeof(CanPeekAttribute), true).Length > 0);
+            paths.AddRange(types.Select(x => (CanPeekAttribute)x.GetCustomAttributes(typeof(CanPeekAttribute), true)
+                   .First())
+               .Select(y => y.FilePath));
+        }
 
         var projectPath = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName + "\\Directory.Build.Props";
         var stringBuilder = new StringBuilder();
